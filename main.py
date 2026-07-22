@@ -81,7 +81,7 @@ class OrganizerApp:
                 row=0, column=i, padx=10, pady=6, sticky="w"
             )
 
-        self.recursive_var = tk.BooleanVar(value=True)
+        self.recursive_var = tk.BooleanVar(value=False)
         ttk.Checkbutton(
             main, text="Scan subfolders too (recursive)", variable=self.recursive_var
         ).grid(row=3, column=0, columnspan=3, sticky="w", padx=10)
